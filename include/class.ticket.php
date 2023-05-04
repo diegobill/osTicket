@@ -490,10 +490,6 @@ implements RestrictedAccess, Threadable, Searchable {
         }
         return null;
     }
-    
-    function getSourceEmail() {
-        return Email::lookup($this->email_id);
-    }
 
     function getReplyToEmail() {
         //TODO: Determine the email to use (once we enable multi-email support)
